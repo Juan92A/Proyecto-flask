@@ -53,8 +53,9 @@
                             <td>{{d.id}}</td>
                             <td>{{d.usuario}}</td>
                             <td>{{d.nombre}}</td>
-                            <td>{{ d.contrasenia }}</td>
-                            <td><button class="btn btn-primary btn-sm" id="btn-edit{{d.id}}" data-bs-toggle="modal" data-bs-target="#modal{{d.id}}">Edit</button></td>
+                            <td>{{d.contrasenia }}</td>
+                            <td><button class="btn btn-primary btn-sm" id="btn-edit{{d.id}}" 
+                              data-bs-toggle="modal" data-bs-target="#modal{{d.id}}">Edit</button></td>
                             <td><a href="{{url_for('delete', id=d.id)}}" class="btn btn-danger btn-sm">Delete</a></td>
                         </tr>
                         
